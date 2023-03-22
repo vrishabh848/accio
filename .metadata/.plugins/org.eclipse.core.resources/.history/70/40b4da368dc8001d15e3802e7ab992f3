@@ -1,0 +1,16 @@
+package comp_decomp;
+
+import java.io.File;
+import java.io.IOException;
+
+public class deCompressor {
+	public static void method(File file) throws IOException {
+		String fileDirectory=file.getParent();
+		
+	}
+	
+	public static void main(String[] args) throws IOException{
+		
+	}
+	
+}

@@ -1,0 +1,41 @@
+package gui;
+
+import java.awt.Color;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+import javax.swing.JButton;
+import javax.swing.JFrame;
+
+public class appFrame extends JFrame implements ActionListener {
+	
+	JButton compressButton;
+	JButton deCompressButton;
+	
+	
+	appFrame(){
+		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		
+		compressButton = new JButton("Select file tocompress");
+		compressButton.setBounds(20, 100, 200, 30);
+		
+		
+		deCompressButton = new JButton("Select file de_compress");
+		deCompressButton.setBounds(250, 100, 200, 30);
+		
+		this.add(compressButton);
+		this.add(deCompressButton);
+		this.setSize(1000,500);
+		this.getContentPane().setBackground(Color.RED);
+		this.setVisible(true);
+		
+		
+		
+	}
+	
+	public void ActionPerformed(ActionEvent e) {
+		
+	}
+	
+
+}
